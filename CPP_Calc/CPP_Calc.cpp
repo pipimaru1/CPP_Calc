@@ -59,31 +59,31 @@ int main()
 		//演算子の種類によって処理を分岐
         switch (op)
         {
-        case '+':
-            result = num1 + num2;
-			validOp = true;
-            break;
-        case '-':
-            result = num1 - num2;
-            validOp = true;
-            break;
-        case '*':
-            result = num1 * num2;
-            validOp = true;
-            break;
-        case '/':
-			///////////////////////////////////////////////////////////
-			//課題3: num2が0のとき、エラーメッセージを
-            // 　　　表示するようにコードを追加してください
-            //       計算結果は0.0にしてください。
-            result = num1 / num2;
-            validOp = true;
-            break;
-        default:
-			//課題4: エラーメッセージを表示するコードをcase文の外に出し一か所にまとめてください。
-            std::cout << "Error: Unknown operator '" << op << "'. Supported operators are +, -, *, /." << std::endl;
-            validOp = false;
-            break;
+            case '+':
+                result = num1 + num2;
+			    validOp = true;
+                break;
+            case '-':
+                result = num1 - num2;
+                validOp = true;
+                break;
+            case '*':
+                result = num1 * num2;
+                validOp = true;
+                break;
+            case '/':
+			    ///////////////////////////////////////////////////////////
+			    //課題3: num2が0のとき、エラーメッセージを
+                // 　　　表示するようにコードを追加してください
+                //       計算結果は0.0にしてください。
+                result = num1 / num2;
+                validOp = true;
+                break;
+            default:
+			    //課題4: エラーメッセージを表示するコードをcase文の外に出し一か所にまとめてください。
+                std::cout << "Error: Unknown operator '" << op << "'. Supported operators are +, -, *, /." << std::endl;
+                validOp = false;
+                break;
         }
         ///////////////////////////////////////////////////////////
 		//課題2: validOpの役割は何ですか？

@@ -70,17 +70,17 @@ public:
         validOp = false;
         switch (op)
         {
-        case '+':
-            return plus();
-        case '-':
-            return minus();
-        case '*':
-            return multiply();
-        case '/':
-            return divide();
-		default:
-			MessageBoxW(NULL, L"Error: Unknown operator.", L"Error", MB_OK);
-			return 0.0;
+            case '+':
+                return plus();
+            case '-':
+                return minus();
+            case '*':
+                return multiply();
+            case '/':
+                return divide();
+		    default:
+			    MessageBoxW(NULL, L"Error: Unknown operator.", L"Error", MB_OK);
+			    return 0.0;
         }
     }
 	
