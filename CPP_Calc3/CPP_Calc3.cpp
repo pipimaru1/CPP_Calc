@@ -5,7 +5,6 @@
 #include <string>   // For std::to_string
 #include <sstream>  // For std::ostringstream
 
-
 class Calc
 {
 	//課題: メンバ変数の初期化をコンストラクタで行うようにしてください。

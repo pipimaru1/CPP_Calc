@@ -82,10 +82,10 @@ int main()
 			std::wostringstream _res;
 			_res << num1 << L" " << op << L" " << num2 << L" = " << result;
 
+            //////////////////////////////////////////////////
             // MessageBoxWを使用して計算結果を表示
 			MessageBoxW(NULL, _res.str().c_str(), L"計算結果", MB_OK);
         }
-
 
         // Clear input buffer before next iteration
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
