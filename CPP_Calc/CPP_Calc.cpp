@@ -89,6 +89,17 @@ int main()
 		//課題2: validOpの役割は何ですか？
         if (validOp)
         {
+			//////////////////////////////////////////////////////////////
+			// 課題5 計算結果を文字列に変換してください
+			// ヒント std::wostringstreamを使用して、数値を文字列に変換できます。
+			// https://learn.microsoft.com/ja-jp/cpp/standard-library/reference/wostringstream-class?view=msvc-160
+
+            //////////////////////////////////////////////////
+            // 課題6 MessageBoxWを使用して計算結果を表示してください
+            // ヒント MessageBoxWの使い方
+			// MessageBoxW(NULL, L"メッセージ", L"タイトル", MB_OK);
+            // https://learn.microsoft.com/ja-jp/windows/win32/api/winuser/nf-winuser-messageboxw
+
             std::cout << "Result: " << result << std::endl;
         }
 
